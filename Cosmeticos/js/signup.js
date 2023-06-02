@@ -36,6 +36,6 @@ signupForm.addEventListener('submit', (e)=>{
     // Se muestra una ventana emergente en el navegador con el mensaje "Registro Exitoso!". Esta línea proporciona una notificación al usuario de que el registro se ha realizado con éxito.
     alert('Registro Exitoso!')
     // Esta línea redirige al usuario a la página login.html. La propiedad location.href del objeto window se establece en la URL 'login.html', lo que provoca que el navegador navegue a esa página.
-    window.location.href = 'login.html'
+    window.location.href = "login.html";
 
 })
