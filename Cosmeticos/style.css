@@ -102,7 +102,6 @@ header {
 }
 
 .principal {
-
     width: 100%;
 }
 
@@ -112,7 +111,6 @@ header {
 }
 
 .btn-1 {
-    text-align: center;
     display: inline-block;
     background: linear-gradient(90deg, #e325dc 0%, #a30c9e 100%);
     padding: 10px 35px;
@@ -139,14 +137,14 @@ header {
 }
 
 .icon {
-    width: 25px;
+    width: 20px;
 }
 
 .product-menu{
     padding: 50px 0 150px 0;
 }
 
-.tittle {
+.title {
     color: #fdfdfd;
     font-size: 45px;
     text-transform: uppercase;
@@ -174,7 +172,9 @@ header {
     margin-right: 20px;
     text-align: center;
     padding: 10px 35px;
-    border-radius:16px;
+    border-radius:25px;
+    color: #a0a0a0;
+    font-size: 16px;
     font-weight: 800;
     background-color: #24252a;
     cursor: pointer;
@@ -216,30 +216,30 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 5px;
     z-index: 1000;
     box-shadow: 0  5px 10px rgba(0,0,0,0.2);
     display: none;
 }
 
-.box-1:ntn-child(1),
-.box-1:ntn-child(2),
-.box-1:ntn-child(3),
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3),
 .box-1:ntn-child(4){
     display: inline-block;
 }
 
-.box-2:ntn-child(1),
-.box-2:ntn-child(2),
-.box-2:ntn-child(3),
-.box-2:ntn-child(4){
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3),
+.box-2:nth-child(4){
     display: inline-block;
 }
 
-.box-3:ntn-child(1),
-.box-3:ntn-child(2),
-.box-3:ntn-child(3),
-.box-3:ntn-child(4){
+.box-3:nth-child(1),
+.box-3:nth-child(2),
+.box-3:nth-child(3),
+.box-3:nth-child(4){
     display: inline-block;
 }
 
@@ -261,6 +261,7 @@ header {
     font-size: 15px;
     color: #a0a0a0;
     line-height: 2;
+    font-size: 15px;
     padding: 15px 0;
 }
 
@@ -274,7 +275,7 @@ header {
 
 .btn:hover{
     background-color: rgb(220, 20, 60);
-    border: rgb(220, 20, 60);
+    border-color: rgb(220, 20, 60);
     color: #fdfdfd;
 }
 
@@ -307,8 +308,9 @@ header {
     margin-top: 50px;
     display: inline-block;
     padding: 13px 35px;
-    border-radius: 1px solid #a0a0a0;
-    color: a0a0a0;
+    border-radius: 25px;
+    border: 1px solid #a0a0a0;
+    color: #a0a0a0;
     font-size: 16px;
     cursor: pointer;
 }
@@ -320,7 +322,7 @@ header {
 }
 
 .info {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), url(img/bg-info.jpg));
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bg-info.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,6 +379,12 @@ header {
 }
 
 .info-img {
+    position: absolute;
+    right: -55px;
+    top: -103px;
+}
+
+.info-img img{
     width: 650px;
 }
 
@@ -449,7 +457,7 @@ header {
         color: #a0a0a0;
     }
 
-    #menu:checked ~ .navbar{
+    #menu:checked ~.navbar{
         display: initial;
     }
 
