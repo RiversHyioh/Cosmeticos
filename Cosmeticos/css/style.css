@@ -13,10 +13,7 @@ body{
     margin: 25px;
 }
 header {
-    background-image: url(img/bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
 }
 
 .container {
@@ -256,14 +253,11 @@ header {
 .box-1,
 .box-2,
 .box-3{
-    background-image: url(img/bg-p.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #24252a;
     padding: 20px;
     border-radius: 5px;
     z-index: 1000;
-    box-shadow: 0  5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0  5px 10px rgba(150, 135, 135, 0.5);
     display: none;
 }
 
@@ -371,10 +365,7 @@ header {
 }
 
 .info {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/bg-info.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     height: 70vh;
 
 }
