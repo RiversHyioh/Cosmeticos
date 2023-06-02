@@ -74,7 +74,7 @@ header {
     cursor: pointer;
 }
 .registro {
-    background:linear-gradient(90deg, #e325dc 0%, #a30c9e 100%);;
+    background:linear-gradient(90deg, #e325dc 0%, #a30c9e 100%);
     border: 1px solid #e325dc;
     color: #fdfdfd;
     font-size:  18px;
@@ -511,10 +511,21 @@ header {
         right: 0;
         background-color: #e325dc;
         display: none;
+        
+    }
+
+    .registro {
+        background: aliceblue;
+        color: #e325dc;
+        border: aliceblue;
     }
 
     .menu .navbar ul li {
         width: 100%;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
     }
 
     .menu .navbar ul li a:hover {
