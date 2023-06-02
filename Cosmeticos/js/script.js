@@ -31,26 +31,28 @@ function radioClass(element, className) {
  * @param nav - El parámetro "nav" es una cadena que representa el selector de CSS para el elemento de
  * navegación que contiene las pestañas.
  */
-function tabs(nav){
+
+function tabs(nav) {
     let navElem = E(nav)[0];
-
+  
     navElem.addEventListener("click", (e) => {
-
-        if(hasClass(target, "tab"))
-            radioClass(target, "active");
-
+      let target = e.target;
+  
+      if (hasClass(target, "tab")) {
+        radioClass(target, "active");
+  
         let linkedTab = E("." + target.id)[0];
-
         radioClass(linkedTab, "visible");
+      }
     });
-
+  
     let active = E(".tab.active")[0];
     if (active) {
-        radioClass(E("." +active.id)[0], "visible");
+      radioClass(E("." + active.id)[0], "visible");
     }
-}
-
-tabs(".menu-nav")
+  }
+  
+  tabs(".menu-nav");
 
 
 /* Este código selecciona un elemento HTML con el ID "load-more-1" y lo asigna a la variable
@@ -64,7 +66,7 @@ loadMoreBnt1.onclick = () => {
         boxes[i].style.display = "inline-block";
     }
 
-    currentIntem1 += 4;
+    currentItem1 += 4;
     if (currentItem1 >= boxes.length) {
         loadMoreBtn1.style.display = "none"
     }
@@ -79,7 +81,7 @@ loadMoreBnt2.onclick = () => {
         boxes[i].style.display = "inline-block";
     }
 
-    currentIntem2 += 4;
+    currentItem2 += 4;
     if (currentItem2 >= boxes.length) {
         loadMoreBtn2.style.display = "none"
     }
@@ -94,7 +96,7 @@ loadMoreBnt3.onclick = () => {
         boxes[i].style.display = "inline-block";
     }
 
-    currentIntem3 += 4;
+    currentItem3 += 4;
     if (currentItem3 >= boxes.length) {
         loadMoreBtn3.style.display = "none"
     }
